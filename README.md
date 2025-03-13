@@ -4,11 +4,13 @@
 Template repo for assignment 2 on Correlation Power Attack on AES implementation.
 
 The assignment is divided into four sections:
-1. Code given (not to be edited)
-2. Analyzing noise
-3. noise removal
-4. CPA attack: (A) without noise removal (B) with noise removal
-5. Correlation plot: (A) without noise removal (B) with noise removal
+Code given (not to be edited)
+Analyzing noise
+noise removal
+CPA attack: (A) without noise removal (B) with noise removal
+Correlation plot: (A) without noise removal (B) with noise removal
+
+1. **Code given (not to be edited)**
 
 2. **Analyzing noise**
 This section contains plotting the samples for few traces to identify patterns that can help distinguish random noise (250 points) from original power samples (5000 points)
