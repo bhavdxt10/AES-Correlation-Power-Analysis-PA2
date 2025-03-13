@@ -71,6 +71,7 @@ This section eliminates consecutive duplicates while keeping the last occurrence
 | Trace 48        | 203                                   |
 | Trace 49        | 239                                   |
 
+size of the original power trace array with noise: (50, 5250)
 size of noiseless array:  (50, 5000)
 
 
@@ -88,3 +89,5 @@ size of noiseless array:  (50, 5000)
    This section contains the following plots:
    - Max correlation vs. key guesses (for byte 0, byte 1, and the first 3 bytes) without noise removal.
    - Max correlation vs. key guesses (for byte 0, byte 1, and the first 3 bytes) with noise removal.
+   All plots have been shown in the assignment2.ipynb file.
+   It can be inferred from the plots that for without noise removal case, we do not observe a proper maxima in the plots ie, the difference between the correlation values of the maximum byte guess and the second maximum byte guess is less as compared with the case where noise is removed. We observe a significant maxima in correlation plots with correct guess. This is because we have removed the noise factor occuring in the power traces. Moreover, the maximum correlation guessed key byte guessed is correctly in noise-less case and incorrectly in with noise case. This can be observed from the plots.
