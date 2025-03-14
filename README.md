@@ -30,7 +30,7 @@ size of noiseless trace array:  (50, 5000)
 - Correlation Computation:
 
     Computed Pearson Correlation between power traces and hypothetical Hamming weights, according to this formula </br>
-    ![Pearson Correlation Coefficient Formula](pearson.png)
+    ![Pearson Correlation Coefficient Formula](pearson.png) </br>
     The key guess with the highest correlation is the most probable key byte.
 
 - Key Recovery:
