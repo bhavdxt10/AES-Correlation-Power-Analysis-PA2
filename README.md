@@ -1,4 +1,4 @@
-#Correlation Power Analysis attack on AES-128
+### Correlation Power Analysis attack on AES-128
 
 ### 1. **Analyzing noise**
 We plotted the samples for few traces to identify patterns that can help distinguish random noise (250 points) from original power samples (5000 points). The traces are misaligned and random noise is there in the starting 0-250 points. So we just need to find where this misalignment is ending, and the actual trace is beginning. Some parts of the power trace remain constant which is the most uncommon pattern.
