@@ -1,19 +1,16 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/nnM899vK)
-# pa2-cpa-attack
+#Correlation Power Analysis attack on AES-128
 
-### 1. **Code given (not to be edited)**
-
-### 2. **Analyzing noise**
+### 1. **Analyzing noise**
 We plotted the samples for few traces to identify patterns that can help distinguish random noise (250 points) from original power samples (5000 points). The traces are misaligned and random noise is there in the starting 0-250 points. So we just need to find where this misalignment is ending, and the actual trace is beginning. Some parts of the power trace remain constant which is the most uncommon pattern.
 
-### 3. **Noise removal** 
+### 2. **Noise removal** 
 We eliminated the misalignment by finding the transition point where the constant value (0.1) is followed by a different value, and extracted 5000 elements from that position for each trace.
   
 size of the original power trace array with noise: (50, 5250)</br>
 size of noiseless trace array:  (50, 5000)
 
 
-### 4. **CPA Attack** 
+### 3. **CPA Attack** 
 
 - Hypothesis Generation:
 
@@ -41,7 +38,7 @@ size of noiseless trace array:  (50, 5000)
    - **Accuracy (CPA Attack without Noise Removal):** 6.25%
    - **Accuracy (CPA Attack with Noise Removal):** 100%
 
-### 5. **Correlation Plot**  
+### 4. **Correlation Plot**  
 
    Correlation plots illustrate how well different key guesses correlate with actual power consumption data.
    The x-axis represents possible key values (0-255), and the y-axis shows the maximum correlation value.
